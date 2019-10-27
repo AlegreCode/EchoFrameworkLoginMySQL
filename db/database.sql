@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS go_auth CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE go_auth;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age VARCHAR(11) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE = INNODB;
